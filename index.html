@@ -5,58 +5,227 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/site.css" />
     <title>virtualzone.github.io</title>
+    <style>
+        .feature-icon {
+            width: 4rem;
+            height: 4rem;
+            border-radius: .75rem;
+        }
+
+        .icon-link>.bi {
+            margin-top: .125rem;
+            margin-left: .125rem;
+            fill: currentcolor;
+            transition: transform .25s ease-in-out;
+        }
+
+        .icon-link:hover>.bi {
+            transform: translate(.25rem);
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-        <h5 class="my-0 mr-md-auto font-weight-normal">virtualzone.github.io</h5>
-        <nav class="my-2 my-md-0 mr-md-3">
-            <a class="p-2 text-dark" href="https://hub.docker.com/u/virtualzone">Docker</a>
-            <a class="p-2 text-dark" href="https://github.com/virtualzone/">GitHub</a>
-        </nav>
-    </div>
-    <div class="site-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h1 class="display-4">virtualzone.github.io</h1>
-        <p class="lead">Technical stuff that makes your life easier. Protect your network, secure your applications and keep your containers up to date. Open Source.</p>
-    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="twitter" viewBox="0 0 16 16">
+            <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+        </symbol>
+        <symbol id="github" viewBox="0 0 16 16">
+            <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+        </symbol>
+        <symbol id="donate" viewBox="0 0 16 16">
+            <path
+                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7h6zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9H2.5z" />
+        </symbol>
+        <symbol id="docker" viewBox="0 0 16 16">
+            <path d="M13.405 7.027a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 13H13a3 3 0 0 0 .405-5.973z" />
+        </symbol>
+        <symbol id="usg-blacklist" viewBox="0 0 16 16">
+            <path
+                d="M0 .5A.5.5 0 0 1 .5 0h15a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5H2v-2H.5a.5.5 0 0 1-.5-.5v-3A.5.5 0 0 1 .5 6H2V4H.5a.5.5 0 0 1-.5-.5v-3zM3 4v2h4.5V4H3zm5.5 0v2H13V4H8.5zM3 10v2h4.5v-2H3zm5.5 0v2H13v-2H8.5zM1 1v2h3.5V1H1zm4.5 0v2h5V1h-5zm6 0v2H15V1h-3.5zM1 7v2h3.5V7H1zm4.5 0v2h5V7h-5zm6 0v2H15V7h-3.5zM1 13v2h3.5v-2H1zm4.5 0v2h5v-2h-5zm6 0v2H15v-2h-3.5z" />
+        </symbol>
+        <symbol id="onedrive-uploader" viewBox="0 0 16 16">
+            <path
+                d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2z" />
+
+        </symbol>
+        <symbol id="compose-updater" viewBox="0 0 16 16">
+            <path
+                d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+            <path fill-rule="evenodd"
+                d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+        </symbol>
+    </svg>
+
     <div class="container">
-        <div class="card-deck mb-3 text-center">
-            <div class="card mb-6 shadow-sm">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">JWT Auth Proxy</h4>
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">A lightweight JWT authentication proxy.</h4>
-                    <p>JWT Auth Proxy sits between your frontend and your application's backend, handles authentication, and proxies authenticated requests to your backend.</p>
-                    <p>It offers REST APIs and logic for signup, password reset and email address change.</p>
-                    <a href="https://github.com/virtualzone/jwt-auth-proxy" class="btn btn-lg btn-block btn-primary">More...</a>
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="./" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <span class="fs-4">virtualzone.github.io</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="https://hub.docker.com/u/virtualzone" class="nav-link">Docker</a></li>
+                <li class="nav-item"><a href="https://github.com/virtualzone/" class="nav-link">GitHub</a></li>
+                </li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="px-4 py-5 my-5 text-center">
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">My open source projects that are meant to make things easier.</p>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                <h1 class="display-4 fw-bold lh-1">Seatsurfing</h1>
+                <p class="lead">Seatsurfing is an open source solution for free seating and co-working in your
+                    organisation. It features mobile apps for iOS and Android, an easy-to-use web booking interface and
+                    an App for Atlassian Confluence.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                    <a href="https://seatsurfing.app/" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Visit
+                        website</a>
                 </div>
             </div>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">Compose Updater</h4>
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Automatically update your Docker Compose containers.</h4>
-                    <p>A solution for watching your Docker® containers running via Docker Compose for image updates and automatically restarting the compositions whenever an image is refreshed.</p>
-                    <a href="https://github.com/virtualzone/compose-updater" class="btn btn-lg btn-block btn-primary">More...</a>
-                </div>
+            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                <img class="rounded-lg-3" src="./img/seatsurfing.webp" alt="" width="450">
             </div>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">USG Blacklist</h4>
+        </div>
+    </div>
+
+    <div class="container px-4 py-5" id="featured-3">
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
+                    <svg class="bi" width="1em" height="1em">
+                        <use xlink:href="#compose-updater" />
+                    </svg>
                 </div>
-                <div class="card-body">
-                    <h4 class="card-title">Dynamic IP blacklisting on UniFi USG.</h4>
-                    <p>This Docker Image remotely sets up a dynamic IP blacklist on your UniFi Security Gateway (USG).</p>
-                    <p>This is kind of a lightweight Intrusion Prevention System (IPS) only based on known blacklisted IP addresses. It retains USG's hardware offloading feature.</p>
-                    <a href="https://github.com/virtualzone/usg-blacklist" class="btn btn-lg btn-block btn-primary">More...</a>
+                <h2>Compose Updater</h2>
+                <p>A solution for watching your Docker® containers running via Docker Compose for image updates and
+                    automatically restarting the compositions whenever a newer image is available.</p>
+                <a href="https://github.com/virtualzone/compose-updater"
+                    class="icon-link d-inline-flex align-items-center">
+                    GitHub Repository
+                    <svg class="bi" width="1em" height="1em">
+                        <use xlink:href="#chevron-right" />
+                    </svg>
+                </a>
+            </div>
+            <div class="feature col">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
+                    <svg class="bi" width="1em" height="1em">
+                        <use xlink:href="#onedrive-uploader" />
+                    </svg>
+                </div>
+                <h2>OneDrive Uploader</h2>
+                <p>Command line interface (CLI) and SDK for uploading files to OneDrive using the Microsoft Graph REST
+                    API. Supports "special folders" (such as App Folder / App Root), downloading and handling
+                    directories.</p>
+                <a href="https://github.com/virtualzone/onedrive-uploader"
+                    class="icon-link d-inline-flex align-items-center">
+                    GitHub Repository
+                    <svg class="bi" width="1em" height="1em">
+                        <use xlink:href="#chevron-right" />
+                    </svg>
+                </a>
+            </div>
+            <div class="feature col">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
+                    <svg class="bi" width="1em" height="1em">
+                        <use xlink:href="#usg-blacklist" />
+                    </svg>
+                </div>
+                <h2>USG Blacklist</h2>
+                <p>Sets up a dynamic IP blacklist on your UniFi Security Gateway (USG). Kind of a lightweight Intrusion
+                    Prevention System (IPS) only based on known blacklisted
+                    IP addresses which retains USG's hardware offloading feature.</p>
+                <a href="https://github.com/virtualzone/usg-blacklist"
+                    class="icon-link d-inline-flex align-items-center">
+                    GitHub Repository
+                    <svg class="bi" width="1em" height="1em">
+                        <use xlink:href="#chevron-right" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <button data-bs-toggle="modal" data-bs-target="#imprint-modal"
+                    class="btn mb-3 mb-md-0 text-muted">&copy; 2022 Heiner Beck</button>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="https://twitter.com/heinerbeck/"><svg class="bi" width="24"
+                            height="24">
+                            <use xlink:href="#twitter" />
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://github.com/virtualzone/"><svg class="bi" width="24"
+                            height="24">
+                            <use xlink:href="#github" />
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://hub.docker.com/u/virtualzone"><svg class="bi"
+                            width="24" height="24">
+                            <use xlink:href="#docker" />
+                        </svg></a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <div class="modal fade" id="imprint-modal" tabindex="-1" aria-labelledby="imprint-modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imprint-modal-label">Imprint</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Heiner Beck<br />
+                        Wilhelm-Busch-Str. 59<br />
+                        60431 Frankfurt am Main<br />
+                        Germany
+                    </p>
+                    <p>
+                        Email: mail@virtualzone.de
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "https://stats.virtualzone.de/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '5']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+        })();
+    </script>
 </body>
 
 </html>
