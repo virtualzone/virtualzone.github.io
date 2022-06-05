@@ -1,0 +1,60 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <div class="entry-content">
+        <article class="post-entry">
+            <div class="cover-img"><img src="/img/seatsurfing-screenshot.png" alt="Seatsurfing" class="seatsurfing" /></div>
+            <header class="entry-header">
+                <h2>Seatsurfing</h2>
+            </header>
+            <div class="entry-content">
+                <p>Seatsurfing is an open source solution for free seating and co-working in your organisation. It features mobile apps for iOS and Android, an easy-to-use web booking interface and an App for Atlassian Confluence.</p>
+            </div>
+            <footer class="entry-footer">
+                {{ partial "svg.html" (dict "context" . "name" "link") }} Visit seatsurfing.app
+                <a class="entry-link"
+                href="https://seatsurfing.app/"></a>
+        </article>
+        <div class="post-entry-multi-row">
+            <article class="post-entry">
+                <header class="entry-header">
+                    <h2>Compose Updater</h2>
+                </header>
+                <div class="entry-content">
+                    <p>Automatically check for image updates and restart Docker containers automatically when using Docker Compose.</p>
+                </div>
+                <footer class="entry-footer">
+                    {{ partial "svg.html" (dict "context" . "name" "github") }} GitHub Project
+                    <a class="entry-link"
+                    href="https://github.com/virtualzone/compose-updater"></a>
+            </article>
+            <article class="post-entry">
+                <header class="entry-header">
+                    <h2>OneDrive Uploader</h2>
+                </header>
+                <div class="entry-content">
+                    <p>Command line interface (CLI) and SDK for uploading files to OneDrive. Supports "special folders" (such as App Folder / App Root)</p>
+                </div>
+                <footer class="entry-footer">
+                    {{ partial "svg.html" (dict "context" . "name" "github") }} GitHub Project
+                    <a class="entry-link"
+                    href="https://github.com/virtualzone/onedrive-uploader"></a>
+            </article>
+            <article class="post-entry">
+                <header class="entry-header">
+                    <h2>USG Blacklist</h2>
+                </header>
+                <div class="entry-content">
+                    <p>Sets up a dynamic IP blacklist on your UniFi Security Gateway (USG) as a lightweight replacement for the Intrusion Prevention System (IPS).</p>
+                </div>
+                <footer class="entry-footer">
+                    {{ partial "svg.html" (dict "context" . "name" "github") }} GitHub Project
+                    <a class="entry-link"
+                    href="https://github.com/virtualzone/usg-blacklist"></a>
+            </article>
+        </div>
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" site.Params.socialIcons }}
+    </footer>
+</article>
+{{- end -}}

@@ -1,0 +1,66 @@
+baseURL: "https://virtualzone.de/"
+languageCode: "en-us"
+title: "Virtualzone Blog"
+theme: "PaperMod"
+Copyright: "&copy; 2022 Heiner Beck."
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: "Virtualzone Blog"
+  description: "Software development, Docker, Linux."
+  author: "Heiner"
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: true
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: true
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Welcome to my blog
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/heinerbeck/"
+    - name: github
+      url: "https://github.com/virtualzone/"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/heinerbeck/"
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: contact
+      name: Imprint
+      url: /contact/
+      weight: 30
+    - identifier: privacy-policy
+      name: Privacy Policy
+      url: /privacy-policy/
+      weight: 40

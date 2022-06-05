@@ -1,0 +1,41 @@
+.post-entry-multi-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 15px;
+}
+
+
+.post-entry-multi-row > article.post-entry {
+    flex-grow: 1;
+    flex-basis: 33%;
+    /* .post-entry is a flex container itself */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.entry-footer > svg {
+    width: 12px;
+    margin-right: 3px;
+}
+
+article.post-entry > .cover-img {
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+article.post-entry > .cover-img img.seatsurfing {
+    object-fit: cover;
+    width: 300px;
+    height: 200px;
+    object-position: left top;
+}
+
+@media (max-width: 720px) {
+    .post-entry-multi-row {
+        display: block;
+    }
+}
