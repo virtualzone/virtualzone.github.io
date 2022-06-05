@@ -38,4 +38,8 @@ article.post-entry > .cover-img img.seatsurfing {
     .post-entry-multi-row {
         display: block;
     }
+
+    article.post-entry > .cover-img {
+        display: none;
+    }
 }
