@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Virtualzone Blog</title>
+    <link>https://virtualzone.de/posts/</link>
+    <description>Recent content in Posts on Virtualzone Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2022 Heiner Beck.</copyright>
+    <lastBuildDate>Fri, 03 Sep 2021 11:30:03 +0000</lastBuildDate><atom:link href="https://virtualzone.de/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up a Kubernetes cluster with K3S, GlusterFS and Load Balancing</title>
+      <link>https://virtualzone.de/posts/k3s-glusterfs/</link>
+      <pubDate>Fri, 03 Sep 2021 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/k3s-glusterfs/</guid>
+      <description>I’ve recently written a tutorial which will guide you through setting up a Kubernetes cluster using K3S with virtual machines hosted at Hetzner, a German (Cloud) hosting provider. The tutorial uses K3S, a lightweight Kubernetes distribution which is perfectly suited for small VMs like Hetzner’s CX11. Additionally, the tutorial will show you how to set up Hetzner’s cloud load balancer which performs SSL offloading and forwards traffic to your Kubernetes system.</description>
+    </item>
+    
+    <item>
+      <title>Back up server to OneDrive’s special App Folder</title>
+      <link>https://virtualzone.de/posts/onedrive-upload-backup/</link>
+      <pubDate>Thu, 02 Sep 2021 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/onedrive-upload-backup/</guid>
+      <description>I’m a convinced user of OneDrive Personal. Bundled with M365, it’s a cheap option to get 1 TB of cloud storage. Having plenty of cloud storage at hand, I’m also using my OneDrive to run automated backups of my servers. There are various solutions capable of uploading files to OneDrive, including rclone. However, I was looking for a solution which enables me to grant my backup script only access to one specific folder instead of my entire cloud drive – better safe than sorry.</description>
+    </item>
+    
+    <item>
+      <title>Unifi USG: Multiple IP addresses on PPPoE</title>
+      <link>https://virtualzone.de/posts/unifi-usg-multiple-ip-addresses-on-pppoe/</link>
+      <pubDate>Mon, 16 Aug 2021 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/unifi-usg-multiple-ip-addresses-on-pppoe/</guid>
+      <description>My DSL provider TAL.de offers to assign a static and a dynamic IP address on PPPoE dial in. The dynamic IP address is the primary one, used for accessing the internet. Packets to the static IP address are routed to the router as well. Here’s how to set up things up on a Unifi Security Gateway (USG).
+By default, USG only allows for one IP address when dialing in via PPPoE.</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi OS: Remove unnecessary packages</title>
+      <link>https://virtualzone.de/posts/raspberry-pi-os-remove-packages/</link>
+      <pubDate>Sun, 07 Jun 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/raspberry-pi-os-remove-packages/</guid>
+      <description>Kürzlich schrieb ich darüber, dass es eine erste 64 bit Beta-Version von Raspberry Pi OS (ehemals Raspbian) gibt. Diese gibt es bislang leider nur in der Desktop-Variante und noch nicht als Lite-Version. Mit zwei Befehlen kannst Du jedoch ganz leicht die – sofern Du sie nicht benötigst – überflüssigen Desktop-Pakete deinstallieren.
+Die Beta von Raspberry Pi OS 64 bit kannst Du im Download-Verzeichnis der Raspberry Pi Seite herunterladen. Auf eine SD-Karte oder SSD bekommst Du das heruntergeladene Image am einfachsten mit dem Raspberry Pi Imager.</description>
+    </item>
+    
+    <item>
+      <title>Analyze Traefik access log using InfluxDB and Grafana</title>
+      <link>https://virtualzone.de/posts/traefik-access-log-influxdb-grafana-telegraf/</link>
+      <pubDate>Wed, 03 Jun 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/traefik-access-log-influxdb-grafana-telegraf/</guid>
+      <description>Traefik ist ein im Docker- und Kubernetes-Umfeld häufig eingesetzter Cloud Native Edge Router. Mit wenig Aufwand lassen sich die Zugriffslogs (Access Logs) von Traefik mittels Telegraf automatisch in eine InfluxDB überführen, um sie mit Hilfe von Grafana auszuwerten. In diesem Artikel zeige ich Dir, wie es geht.
+In diesem Setup gibt es folgende wesentliche Elemente:
+Traefik v2 läuft als Docker Container auf einem Linux Host. Traefik schreibt die Accesslogs im JSON-Format nach STDOUT.</description>
+    </item>
+    
+    <item>
+      <title>Export trainings from Endomondo as GPX files</title>
+      <link>https://virtualzone.de/posts/endomono-export-gpx/</link>
+      <pubDate>Mon, 01 Jun 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/endomono-export-gpx/</guid>
+      <description>Seit etlichen Jahren zeichne ich meine Trainings mit Endomondo auf. Doch seit ca. einem Jahr gibt es mit Website und App immer mehr Probleme: Mal funktioniert das Einloggen nicht, mal werden die Trainings nicht synchronisiert. Bei mir war es Zeit für eine neue App – ich habe mich für Strava entschieden. Mit ein wenig Code oder meinem fertigem Programm kannst Du alle Deine Trainings als GPX aus Endomondo exportieren.
+Auf der Strava-Website gibt es einen Artikel zur Frage, wie man von Endomondo zu Strava umzieht.</description>
+    </item>
+    
+    <item>
+      <title>Native USB boot for Raspberry Pi 4</title>
+      <link>https://virtualzone.de/posts/usb-boot-raspberry-pi/</link>
+      <pubDate>Thu, 28 May 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/usb-boot-raspberry-pi/</guid>
+      <description>Darauf habe sicher nicht nur ich gewartet: Endlich kann der Raspberry Pi 4 von USB-Laufwerken starten! Und das ganz ohne die weit verbreiteten Workarounds, bei denen noch eine SD-Karte als primäres Boot-Medium benötigt wurde. Möglich macht es eine neuen Firmware, ein sogenanntes EEPROM. Und nebenbei gibt es auch eine 64 bit Beta-Version von Raspberry OS, ehemals Raspbian.
+Zunächst musst Du dazu Deinen Raspberry Pi mit einem Raspbian bzw. Raspberry OS booten.</description>
+    </item>
+    
+    <item>
+      <title>Build Multi-Arch images on Docker Hub (Part 2)</title>
+      <link>https://virtualzone.de/posts/multi-arch-docker-images-2/</link>
+      <pubDate>Sat, 16 May 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/multi-arch-docker-images-2/</guid>
+      <description>Im ersten Teil dieses Artikels habe ich Euch gezeigt, wie Ihr ein Multi-Arch-Docker-Projekt anlegt, das auf einer AMD64-Plattform auch für andere Zielarchitekturen wie bspw. ARM bauen kann. In diesem Teil zeige ich Euch, wie Ihr das Ganze im offiziellen Docker Hub zum Laufen bekommt.
+Zunächst solltet Ihr ein Projekt im Docker Hub anlegen und dieses mit Eurem Quellcode-Repository verknüpfen. In meinem Fall nutze ich GitHub als Sourcecode-Repository und nutze die Build-Infrastruktur von Docker Hub.</description>
+    </item>
+    
+    <item>
+      <title>Build Multi-Arch images on Docker Hub (Part 1)</title>
+      <link>https://virtualzone.de/posts/multi-arch-docker-images-1/</link>
+      <pubDate>Fri, 15 May 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/multi-arch-docker-images-1/</guid>
+      <description>Multi-Arch Docker Images sind eine tolle Sache: Benutzer Eurer Images ziehen automatisch die für Ihre Architektur passende Version Eures Image – ob AMD64, ARM64 oder ARM32. Normalerweise muss man Docker Images auf der Architektur bauen, auf der sie später auch verwendet werden. Durch die Verwendung des Emulators QEMU ist es jedoch möglich, auf einer AMD64-Architektur für alle anderen Zielplattformen mitzubauen. Kombiniert mit der Auto-Build-Funktion des Docker Hub ist das eine prima Arbeitserleichterung.</description>
+    </item>
+    
+    <item>
+      <title>How to let Jenkins build Docker images</title>
+      <link>https://virtualzone.de/posts/jenkins-build-docker-images/</link>
+      <pubDate>Sun, 11 Jun 2017 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/jenkins-build-docker-images/</guid>
+      <description>If you’re using Jenkins as your Continuous Integration (CI) tool and Docker to build self-contained images of your application, you may ask yourself how to automatically build Docker images during Jenkins’ build job. Here’s how I did it – with Jenkins running in a Docker container itself.
+So far, I’ve used the official Jenkins Docker image (the one based on Alpine). I’ve tried some of the Docker plugins for Jenkins available out there.</description>
+    </item>
+    
+    <item>
+      <title>Using Let’s Encrypt / EFF’s CertBot with NGINX in Docker</title>
+      <link>https://virtualzone.de/posts/lets-encrypt-effs-certbot-with-nginx-in-docker/</link>
+      <pubDate>Sat, 11 Feb 2017 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/lets-encrypt-effs-certbot-with-nginx-in-docker/</guid>
+      <description>I’m using NGINX in a Docker Container as a front-end HTTP(s) Webserver, performing SSL termination and proxying incoming requests to various other Docker Containers and VMs. Now that I’ve switched my certificates to Let’s Encrypt, I wondered how to integrate EFF’s CertBot (which is recommended by Let’s Encrypt) with my setup. Here’s how I did it.
+First, I’ve added two new volumes to my web-front-end’s Docker Compose File:
+version: &amp;#39;2&amp;#39; services: webfrontend: container_name: webfrontend [.</description>
+    </item>
+    
+    <item>
+      <title>Creating an encrypted file container on macOS</title>
+      <link>https://virtualzone.de/posts/encrypted-file-container-macos/</link>
+      <pubDate>Tue, 06 Dec 2016 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/encrypted-file-container-macos/</guid>
+      <description>Some years ago, I’ve used TrueCrypt to create encrypted containers for storing sensitive files. However, TrueCrypt is nowadays considered insecure and I’m on macOS Sierra 10.12 now – time for another solution. Luckily, macOS has integrated means for creating encrypted containers and saving sensitive information in it. You don’t need any additional software for this. As far as I know, this solution also works for previous versions of Mac OS X, like Mac OS X 10.</description>
+    </item>
+    
+    <item>
+      <title>UptimeRobot: A nice free website monitoring service</title>
+      <link>https://virtualzone.de/posts/uptime-robot-website-monitoring/</link>
+      <pubDate>Mon, 05 Sep 2016 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/uptime-robot-website-monitoring/</guid>
+      <description>Over the weekend I’ve been looking around for a free service which monitors my websites. My requirement was that I want to be able to monitor both HTTP and HTTPS sites, I need support for authentication and the monitoring service should be able to check if a specific keyword exists within the watched site (instead of just assuming that a HTTP Status Code 200 is okay). Furthermore, I needed notifications in case of downtimes (Email and Pushbullet is fine for me).</description>
+    </item>
+    
+    <item>
+      <title>Fix Docker not using /etc/hosts on MacOS</title>
+      <link>https://virtualzone.de/posts/fix-docker-not-using-etc-hosts-on-macos/</link>
+      <pubDate>Sun, 28 Aug 2016 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/fix-docker-not-using-etc-hosts-on-macos/</guid>
+      <description>On my MacBook with Mac OS X 10.11 (El Capitan) and Docker 1.12.0, Docker did not read manually set DNS entries from the /etc/hosts file.
+When I executed “docker push” for example, this resulted in “no such hosts” errors:
+Put http://shuttle:5000/v1/repositories/webfrontend/: dial tcp: lookup shuttle on 192.168.65.1:53: no such host On Mac OS, Docker is running in a host container itself. Thus, you’ll have to add DNS entries to the container’s /etc/hosts file.</description>
+    </item>
+    
+    <item>
+      <title>From FHEM to OpenHAB with Homegear: Installation/Docker container</title>
+      <link>https://virtualzone.de/posts/from-fhem-to-openhab-with-homegear-installation-docker-container/</link>
+      <pubDate>Sun, 28 Aug 2016 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/from-fhem-to-openhab-with-homegear-installation-docker-container/</guid>
+      <description>For more than 2.5 years, I’ve now been running FHEM with several HomeMatic sensors and actors. Using the HM-CFG-LAN Configuration Tool as an I/O interface between FHEM and the HomeMatic devices, this setup has been running smoothly most of the time. The configuration was a bit tricky now and then, but it worked. However, OpenHAB seems to become a really good choice. Version 2 is currently available as Beta 3. It features a modern web interface and an easy-to-use extension manager.</description>
+    </item>
+    
+    <item>
+      <title>How to set up HTTPS/SSL in WordPress behind Proxy (nginx, HAProxy, Apache, lighttpd)</title>
+      <link>https://virtualzone.de/posts/https-ssl-in-wordpress-behind-proxy/</link>
+      <pubDate>Sat, 27 Aug 2016 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/https-ssl-in-wordpress-behind-proxy/</guid>
+      <description>Today I changed the accessibility of my blog from HTTP (unencrypted) to HTTPS/SSL. My blog is running WordPress behind an nginx proxy server. However, while the pages themselves loaded successfully from HTTPS, the embedded static resources like JavaScripts, Images, CSS files etc. did not. Here’s how I fixed it.
+The cause of this issue is that WordPress doesn’t seem to detect the original protocol scheme (HTTPS) correctly when running behind a proxy.</description>
+    </item>
+    
+    <item>
+      <title>How to reduce PDF file size in Linux - Part 2</title>
+      <link>https://virtualzone.de/posts/reduce-pdf-file-size-2/</link>
+      <pubDate>Sat, 15 Aug 2015 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/reduce-pdf-file-size-2/</guid>
+      <description>Several months ago, I wrote a blog post about reducing a PDF file’s size. Since then, I’ve used that technique many times. However, you may want to control the DPI (dots per inch) even more specific. Here’s how to do it:
+gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.7 \ -dDownsampleColorImages=true \ -dDownsampleGrayImages=true \ -dDownsampleMonoImages=true \ -dColorImageResolution=120 \ -dGrayImageResolution=120 \ -dMonoImageResolution=120 \ -sOutputFile=output.pdf input.pdf Hint: This also works on MacOS. Just install GhostScript using Homebrew:</description>
+    </item>
+    
+    <item>
+      <title>How to enable IPv6 on a SonicWall (SonicOS 5.9) using NAT</title>
+      <link>https://virtualzone.de/posts/ipv6-on-a-sonicwall/</link>
+      <pubDate>Thu, 20 Nov 2014 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/ipv6-on-a-sonicwall/</guid>
+      <description>IPv6 aimed to make Network Address Translation (NAT) obselete as there are so many addresses available that every single device can have its own worldwide unique IPv6 address. However, even with IPv6, using NAT is a very simple way to get your devices behind a Dell SonicWall connected to IPv6 services on the internet. In contrast to going without NAT, all the devices behind your SonicWall will emerge under the SonicWall’s IPv6 address.</description>
+    </item>
+    
+    <item>
+      <title>How to reduce PDF file size in Linux</title>
+      <link>https://virtualzone.de/posts/reduce-pdf-file-size/</link>
+      <pubDate>Wed, 21 Nov 2012 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/reduce-pdf-file-size/</guid>
+      <description>Using a single line of GhostScript command on my Ubuntu’s terminal, I was able to reduce the size of a PDF file from 6 MB to approximately 1 MB:
+gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -sOutputFile=output.pdf input.pdf You can also use the following parameters for -dPDFSETTINGS instead of /screen:
+/screen – Lowest quality, lowest size /ebook – Moderate quality /printer – Good quality /prepress – Best quality, highest size Update: Read Part 2 of this blog post for more detailled file size reduction settings.</description>
+    </item>
+    
+    <item>
+      <title>Determining a location’s federal state using Google Maps API</title>
+      <link>https://virtualzone.de/posts/determining-a-locations-federal-state-using-google-maps-api/</link>
+      <pubDate>Fri, 10 Aug 2012 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/determining-a-locations-federal-state-using-google-maps-api/</guid>
+      <description>If you have to find out which federal state a city belongs to, you can use the Google Maps API v3. Here is a straightforward JavaScript code snippet:
+function log(s) { $(&amp;#39;#sysout&amp;#39;).append(document.createTextNode(s + &amp;#39;n&amp;#39;)); } function getResult(results) { for (var i=0; i -1) { return result[&amp;#39;address_components&amp;#39;][j][&amp;#39;short_name&amp;#39;]; } } return &amp;#39;&amp;#39;; } function getCountry(result) { return extractFirst(result, &amp;#39;country&amp;#39;); } function getFederalState(result) { return extractFirst(result, &amp;#39;administrative_area_level_1&amp;#39;); } function searchLocation() { $(&amp;#39;#sysout&amp;#39;).empty(); var location = $(&amp;#39;#location&amp;#39;).</description>
+    </item>
+    
+  </channel>
+</rss>

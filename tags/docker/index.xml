@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>docker on Virtualzone Blog</title>
+    <link>https://virtualzone.de/tags/docker/</link>
+    <description>Recent content in docker on Virtualzone Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2022 Heiner Beck.</copyright>
+    <lastBuildDate>Wed, 03 Jun 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://virtualzone.de/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Analyze Traefik access log using InfluxDB and Grafana</title>
+      <link>https://virtualzone.de/posts/traefik-access-log-influxdb-grafana-telegraf/</link>
+      <pubDate>Wed, 03 Jun 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/traefik-access-log-influxdb-grafana-telegraf/</guid>
+      <description>Traefik ist ein im Docker- und Kubernetes-Umfeld häufig eingesetzter Cloud Native Edge Router. Mit wenig Aufwand lassen sich die Zugriffslogs (Access Logs) von Traefik mittels Telegraf automatisch in eine InfluxDB überführen, um sie mit Hilfe von Grafana auszuwerten. In diesem Artikel zeige ich Dir, wie es geht.
+In diesem Setup gibt es folgende wesentliche Elemente:
+Traefik v2 läuft als Docker Container auf einem Linux Host. Traefik schreibt die Accesslogs im JSON-Format nach STDOUT.</description>
+    </item>
+    
+    <item>
+      <title>Build Multi-Arch images on Docker Hub (Part 2)</title>
+      <link>https://virtualzone.de/posts/multi-arch-docker-images-2/</link>
+      <pubDate>Sat, 16 May 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/multi-arch-docker-images-2/</guid>
+      <description>Im ersten Teil dieses Artikels habe ich Euch gezeigt, wie Ihr ein Multi-Arch-Docker-Projekt anlegt, das auf einer AMD64-Plattform auch für andere Zielarchitekturen wie bspw. ARM bauen kann. In diesem Teil zeige ich Euch, wie Ihr das Ganze im offiziellen Docker Hub zum Laufen bekommt.
+Zunächst solltet Ihr ein Projekt im Docker Hub anlegen und dieses mit Eurem Quellcode-Repository verknüpfen. In meinem Fall nutze ich GitHub als Sourcecode-Repository und nutze die Build-Infrastruktur von Docker Hub.</description>
+    </item>
+    
+    <item>
+      <title>Build Multi-Arch images on Docker Hub (Part 1)</title>
+      <link>https://virtualzone.de/posts/multi-arch-docker-images-1/</link>
+      <pubDate>Fri, 15 May 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/multi-arch-docker-images-1/</guid>
+      <description>Multi-Arch Docker Images sind eine tolle Sache: Benutzer Eurer Images ziehen automatisch die für Ihre Architektur passende Version Eures Image – ob AMD64, ARM64 oder ARM32. Normalerweise muss man Docker Images auf der Architektur bauen, auf der sie später auch verwendet werden. Durch die Verwendung des Emulators QEMU ist es jedoch möglich, auf einer AMD64-Architektur für alle anderen Zielplattformen mitzubauen. Kombiniert mit der Auto-Build-Funktion des Docker Hub ist das eine prima Arbeitserleichterung.</description>
+    </item>
+    
+    <item>
+      <title>How to let Jenkins build Docker images</title>
+      <link>https://virtualzone.de/posts/jenkins-build-docker-images/</link>
+      <pubDate>Sun, 11 Jun 2017 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/jenkins-build-docker-images/</guid>
+      <description>If you’re using Jenkins as your Continuous Integration (CI) tool and Docker to build self-contained images of your application, you may ask yourself how to automatically build Docker images during Jenkins’ build job. Here’s how I did it – with Jenkins running in a Docker container itself.
+So far, I’ve used the official Jenkins Docker image (the one based on Alpine). I’ve tried some of the Docker plugins for Jenkins available out there.</description>
+    </item>
+    
+    <item>
+      <title>Using Let’s Encrypt / EFF’s CertBot with NGINX in Docker</title>
+      <link>https://virtualzone.de/posts/lets-encrypt-effs-certbot-with-nginx-in-docker/</link>
+      <pubDate>Sat, 11 Feb 2017 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/lets-encrypt-effs-certbot-with-nginx-in-docker/</guid>
+      <description>I’m using NGINX in a Docker Container as a front-end HTTP(s) Webserver, performing SSL termination and proxying incoming requests to various other Docker Containers and VMs. Now that I’ve switched my certificates to Let’s Encrypt, I wondered how to integrate EFF’s CertBot (which is recommended by Let’s Encrypt) with my setup. Here’s how I did it.
+First, I’ve added two new volumes to my web-front-end’s Docker Compose File:
+version: &amp;#39;2&amp;#39; services: webfrontend: container_name: webfrontend [.</description>
+    </item>
+    
+    <item>
+      <title>Fix Docker not using /etc/hosts on MacOS</title>
+      <link>https://virtualzone.de/posts/fix-docker-not-using-etc-hosts-on-macos/</link>
+      <pubDate>Sun, 28 Aug 2016 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/fix-docker-not-using-etc-hosts-on-macos/</guid>
+      <description>On my MacBook with Mac OS X 10.11 (El Capitan) and Docker 1.12.0, Docker did not read manually set DNS entries from the /etc/hosts file.
+When I executed “docker push” for example, this resulted in “no such hosts” errors:
+Put http://shuttle:5000/v1/repositories/webfrontend/: dial tcp: lookup shuttle on 192.168.65.1:53: no such host On Mac OS, Docker is running in a host container itself. Thus, you’ll have to add DNS entries to the container’s /etc/hosts file.</description>
+    </item>
+    
+    <item>
+      <title>From FHEM to OpenHAB with Homegear: Installation/Docker container</title>
+      <link>https://virtualzone.de/posts/from-fhem-to-openhab-with-homegear-installation-docker-container/</link>
+      <pubDate>Sun, 28 Aug 2016 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/from-fhem-to-openhab-with-homegear-installation-docker-container/</guid>
+      <description>For more than 2.5 years, I’ve now been running FHEM with several HomeMatic sensors and actors. Using the HM-CFG-LAN Configuration Tool as an I/O interface between FHEM and the HomeMatic devices, this setup has been running smoothly most of the time. The configuration was a bit tricky now and then, but it worked. However, OpenHAB seems to become a really good choice. Version 2 is currently available as Beta 3. It features a modern web interface and an easy-to-use extension manager.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>linux on Virtualzone Blog</title>
+    <link>https://virtualzone.de/tags/linux/</link>
+    <description>Recent content in linux on Virtualzone Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2022 Heiner Beck.</copyright>
+    <lastBuildDate>Sat, 15 Aug 2015 11:30:03 +0000</lastBuildDate><atom:link href="https://virtualzone.de/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to reduce PDF file size in Linux - Part 2</title>
+      <link>https://virtualzone.de/posts/reduce-pdf-file-size-2/</link>
+      <pubDate>Sat, 15 Aug 2015 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/reduce-pdf-file-size-2/</guid>
+      <description>Several months ago, I wrote a blog post about reducing a PDF file’s size. Since then, I’ve used that technique many times. However, you may want to control the DPI (dots per inch) even more specific. Here’s how to do it:
+gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.7 \ -dDownsampleColorImages=true \ -dDownsampleGrayImages=true \ -dDownsampleMonoImages=true \ -dColorImageResolution=120 \ -dGrayImageResolution=120 \ -dMonoImageResolution=120 \ -sOutputFile=output.pdf input.pdf Hint: This also works on MacOS. Just install GhostScript using Homebrew:</description>
+    </item>
+    
+    <item>
+      <title>How to reduce PDF file size in Linux</title>
+      <link>https://virtualzone.de/posts/reduce-pdf-file-size/</link>
+      <pubDate>Wed, 21 Nov 2012 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/reduce-pdf-file-size/</guid>
+      <description>Using a single line of GhostScript command on my Ubuntu’s terminal, I was able to reduce the size of a PDF file from 6 MB to approximately 1 MB:
+gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -sOutputFile=output.pdf input.pdf You can also use the following parameters for -dPDFSETTINGS instead of /screen:
+/screen – Lowest quality, lowest size /ebook – Moderate quality /printer – Good quality /prepress – Best quality, highest size Update: Read Part 2 of this blog post for more detailled file size reduction settings.</description>
+    </item>
+    
+  </channel>
+</rss>

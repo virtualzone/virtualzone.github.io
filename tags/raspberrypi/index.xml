@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>raspberrypi on Virtualzone Blog</title>
+    <link>https://virtualzone.de/tags/raspberrypi/</link>
+    <description>Recent content in raspberrypi on Virtualzone Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2022 Heiner Beck.</copyright>
+    <lastBuildDate>Sun, 07 Jun 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://virtualzone.de/tags/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raspberry Pi OS: Remove unnecessary packages</title>
+      <link>https://virtualzone.de/posts/raspberry-pi-os-remove-packages/</link>
+      <pubDate>Sun, 07 Jun 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/raspberry-pi-os-remove-packages/</guid>
+      <description>Kürzlich schrieb ich darüber, dass es eine erste 64 bit Beta-Version von Raspberry Pi OS (ehemals Raspbian) gibt. Diese gibt es bislang leider nur in der Desktop-Variante und noch nicht als Lite-Version. Mit zwei Befehlen kannst Du jedoch ganz leicht die – sofern Du sie nicht benötigst – überflüssigen Desktop-Pakete deinstallieren.
+Die Beta von Raspberry Pi OS 64 bit kannst Du im Download-Verzeichnis der Raspberry Pi Seite herunterladen. Auf eine SD-Karte oder SSD bekommst Du das heruntergeladene Image am einfachsten mit dem Raspberry Pi Imager.</description>
+    </item>
+    
+    <item>
+      <title>Native USB boot for Raspberry Pi 4</title>
+      <link>https://virtualzone.de/posts/usb-boot-raspberry-pi/</link>
+      <pubDate>Thu, 28 May 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/usb-boot-raspberry-pi/</guid>
+      <description>Darauf habe sicher nicht nur ich gewartet: Endlich kann der Raspberry Pi 4 von USB-Laufwerken starten! Und das ganz ohne die weit verbreiteten Workarounds, bei denen noch eine SD-Karte als primäres Boot-Medium benötigt wurde. Möglich macht es eine neuen Firmware, ein sogenanntes EEPROM. Und nebenbei gibt es auch eine 64 bit Beta-Version von Raspberry OS, ehemals Raspbian.
+Zunächst musst Du dazu Deinen Raspberry Pi mit einem Raspbian bzw. Raspberry OS booten.</description>
+    </item>
+    
+  </channel>
+</rss>

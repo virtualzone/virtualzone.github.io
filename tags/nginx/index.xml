@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>nginx on Virtualzone Blog</title>
+    <link>https://virtualzone.de/tags/nginx/</link>
+    <description>Recent content in nginx on Virtualzone Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2022 Heiner Beck.</copyright>
+    <lastBuildDate>Sat, 11 Feb 2017 11:30:03 +0000</lastBuildDate><atom:link href="https://virtualzone.de/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Let’s Encrypt / EFF’s CertBot with NGINX in Docker</title>
+      <link>https://virtualzone.de/posts/lets-encrypt-effs-certbot-with-nginx-in-docker/</link>
+      <pubDate>Sat, 11 Feb 2017 11:30:03 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/lets-encrypt-effs-certbot-with-nginx-in-docker/</guid>
+      <description>I’m using NGINX in a Docker Container as a front-end HTTP(s) Webserver, performing SSL termination and proxying incoming requests to various other Docker Containers and VMs. Now that I’ve switched my certificates to Let’s Encrypt, I wondered how to integrate EFF’s CertBot (which is recommended by Let’s Encrypt) with my setup. Here’s how I did it.
+First, I’ve added two new volumes to my web-front-end’s Docker Compose File:
+version: &amp;#39;2&amp;#39; services: webfrontend: container_name: webfrontend [.</description>
+    </item>
+    
+  </channel>
+</rss>
