@@ -42,8 +42,7 @@ By default, USG only allows for one IP address when dialing in via PPPoE.</descr
       <pubDate>Sun, 07 Jun 2020 11:30:03 +0000</pubDate>
       
       <guid>https://virtualzone.de/posts/raspberry-pi-os-remove-packages/</guid>
-      <description>Kürzlich schrieb ich darüber, dass es eine erste 64 bit Beta-Version von Raspberry Pi OS (ehemals Raspbian) gibt. Diese gibt es bislang leider nur in der Desktop-Variante und noch nicht als Lite-Version. Mit zwei Befehlen kannst Du jedoch ganz leicht die – sofern Du sie nicht benötigst – überflüssigen Desktop-Pakete deinstallieren.
-Die Beta von Raspberry Pi OS 64 bit kannst Du im Download-Verzeichnis der Raspberry Pi Seite herunterladen. Auf eine SD-Karte oder SSD bekommst Du das heruntergeladene Image am einfachsten mit dem Raspberry Pi Imager.</description>
+      <description>Recently, I wrote about the availability of the 64 bit beta version of Raspberry Pi OS (formerly known as Raspbian). Unfortunately, the new 64 bit beta is only available in the Desktop variant, containing lots of packages most lightweight server systems won&amp;rsquo;t need. There&amp;rsquo;s no lite variant of the 64 bit beta version available at the time of writing. However, you can easily remove the Desktop packages from a running installation with two easy commands.</description>
     </item>
     
     <item>
