@@ -9,15 +9,15 @@ aliases:
     - /2020/06/trainings-gpx-datei-endomondo-exportieren/
 ---
 
-Seit etlichen Jahren zeichne ich meine Trainings mit Endomondo auf. Doch seit ca. einem Jahr gibt es mit Website und App immer mehr Probleme: Mal funktioniert das Einloggen nicht, mal werden die Trainings nicht synchronisiert. Bei mir war es Zeit für eine neue App – ich habe mich für Strava entschieden. Mit ein wenig Code oder meinem fertigem Programm kannst Du alle Deine Trainings als GPX aus Endomondo exportieren.
+I've been using Endomondo for years to track my trainings. However, I've been experiencing a lot of issues with Endomondo over the last months: Sometimes it's not possible to log in. Other times, my trainings won't get synced. So it's time a new app. I've decided to give Strava a try. With a few lines of code, I've managed to export all my training data as GPX files. These can be imported to Strava, so my training history won't get lost.
 
-Auf der [Strava-Website gibt es einen Artikel](https://support.strava.com/hc/en-us/articles/216917747-Moving-your-activity-history-from-Endomondo-to-Strava) zur Frage, wie man von Endomondo zu Strava umzieht. Doch die Antwort ist erstmal nicht so toll: Man kann über die Endomondo-Website die Trainings jeweils einzeln als GXP-Datei exportieren.
+There's an [article on Strava's website](https://support.strava.com/hc/en-us/articles/216917747-Moving-your-activity-history-from-Endomondo-to-Strava) on how to move from Endomondo to Strava. But the answer is a bit too easy: Using Endomondo's website, you can only export a single training at a time in GPX file format.
 
-Gut: GPX (GPS Exchange Format) ist ein Standard-Datei-Format zum Austausch von GPS-Koordinaten. Aus den Wegpunkten zusammen mit weiteren Metadaten (z.B. Datum, Sportart) kann jedes Deiner Trainings rekonstruiert werden.
+The good: GPX (GPS Exchange Format) is an standard file format used to exchange GPS coordinates. Using the GPS waypoints and some meta data (i.e. date, type of training), each of your trainings is reconstructable.
 
-Weniger gut: Ich habe mehr als 1.000 Trainings aus den letzten Jahren und wenig Motivation, mich einzeln durch diese hindurch zu klicken.
+The bad: I've done more than 1,000 trainings in Endonomdo and I'm not willing to export each of them one by one.
 
-Im Modul-Repository für Node.JS, npmjs.com, gibt es jedoch das [Modul endomondo-api-handler](https://www.npmjs.com/package/endomondo-api-handler). Mit diesem ist mit wenig Aufwand das Suchen, Auswählen und Herunterladen von Trainings möglich:
+In Node.JS' module respository, npmjs.com, there's a [module named endomondo-api-handler](https://www.npmjs.com/package/endomondo-api-handler). Using this, it's easy to search, select and download trainings from Endomondo's servers:
 
 ```javascript
 await api.processWorkouts(filter, async (workout) => {
@@ -29,13 +29,13 @@ await api.processWorkouts(filter, async (workout) => {
 });
 ```
 
-Ich habe das Ganze mit ein bisschen “Drumherum” in ein [kleines Node.JS Programm gepackt](https://github.com/virtualzone/endomondo-exporter), das Du in meinem GitHub-Account findest. Mit diesem kannst Du ganz einfach Deine Trainings als GPX aus Endomondo exportieren:
+I've used this module to create a [little Node.JS tool](https://github.com/virtualzone/endomondo-exporter) which can be found on my GitHub account. You can use it to export *all* of a year's trainings from Endonomdo:
 
 ```bash
 ./index.js --username=... --password=... --year=2019 --month=11 --dir=/home/john/trainings
 ```
 
-Die Voraussetzung ist, dass [Node.JS](https://nodejs.org/) auf Deinem Computer installiert ist. Danach kannst Du mittels Git den Code aus meinem GitHub-Repository auschecken und den oben genannten Befehl zum Speichern Deiner Trainings ausführen:
+In order to use this tool, [Node.JS](https://nodejs.org/) must be installed on your computer. You can then check out the tool's source code from my GitHub repository and run the following commands to make the tool ready to run:
 
 ```bash
 git clone https://github.com/virtualzone/endomondo-exporter.git
@@ -43,6 +43,6 @@ cd endomondo-exporter
 npm install
 ```
 
-Der Import der GPX-Dateien bei Strava ist relativ einfach, da man bis zu 25 Dateien gleichzeitig hochladen kann. Scheinbar gibt es aber ein Rate-Limit – nach einigen Imports wurde mit einem Server Fehler geantwortet. Nach kurzer Wartezeit ging es dann aber jeweils wieder.
+Importing GPX files to Strava is quite easy: You can upload 25 training files at once. There seems to be some rate limiting. I've received server errors after several imports. Waiting a few minutes solved that.
 
 ![](/img/strava-import.png)
