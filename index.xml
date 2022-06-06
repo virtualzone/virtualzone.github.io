@@ -51,9 +51,9 @@ By default, USG only allows for one IP address when dialing in via PPPoE.</descr
       <pubDate>Wed, 03 Jun 2020 11:30:03 +0000</pubDate>
       
       <guid>https://virtualzone.de/posts/traefik-access-log-influxdb-grafana-telegraf/</guid>
-      <description>Traefik ist ein im Docker- und Kubernetes-Umfeld häufig eingesetzter Cloud Native Edge Router. Mit wenig Aufwand lassen sich die Zugriffslogs (Access Logs) von Traefik mittels Telegraf automatisch in eine InfluxDB überführen, um sie mit Hilfe von Grafana auszuwerten. In diesem Artikel zeige ich Dir, wie es geht.
-In diesem Setup gibt es folgende wesentliche Elemente:
-Traefik v2 läuft als Docker Container auf einem Linux Host. Traefik schreibt die Accesslogs im JSON-Format nach STDOUT.</description>
+      <description>Traefik is a Cloud Native Edge Router, often deployed in Docker and Kubernetes environments. With little effort, you can use Telegraf to transport Traefik&amp;rsquo;s access logs to an InfluxDB, where it can be analyzed using Grafana.
+This setup contains the following elements:
+Traefik v2 runs as a Docker container on a Linux host. Traefik outputs access logs in JSON format to STDOUT. Telegraf fetched the Traefik container&amp;rsquo;s JSON output using the docker_log input plugin.</description>
     </item>
     
     <item>
