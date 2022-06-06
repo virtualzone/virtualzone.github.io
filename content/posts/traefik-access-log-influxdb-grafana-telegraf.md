@@ -8,18 +8,18 @@ aliases:
     - /2020/06/traefik-access-log-influxdb-grafana-telegraf/
 ---
 
-[Traefik](https://containo.us/traefik/) ist ein im Docker- und Kubernetes-Umfeld häufig eingesetzter Cloud Native Edge Router. Mit wenig Aufwand lassen sich die Zugriffslogs (Access Logs) von Traefik mittels Telegraf automatisch in eine InfluxDB überführen, um sie mit Hilfe von Grafana auszuwerten. In diesem Artikel zeige ich Dir, wie es geht.
+[Traefik](https://containo.us/traefik/) is a Cloud Native Edge Router, often deployed in Docker and Kubernetes environments. With little effort, you can use Telegraf to transport Traefik's access logs to an InfluxDB, where it can be analyzed using Grafana.
 
-In diesem Setup gibt es folgende wesentliche Elemente:
+This setup contains the following elements:
 
-* Traefik v2 läuft als Docker Container auf einem Linux Host.
-* Traefik schreibt die Accesslogs im JSON-Format nach STDOUT.
-* Telegraf holt die JSON-Ausgaben vom Traefik-Container mit dem docker_log Input-Plugin ab.
-* Um mit dem JSON-Output in der InfluxDB bzw. in Grafana etwas anfangen zu können, wandle ich sie mit dem Parser-Processor-Plugin von Telegraf in eigenständige Felder um. Das ist notwendig, da ansonsten nur die numerischen Werte als Metriken übernommen werden – die String-Werte werden standardmäßig verworfen.
-* Mit dem Telegraf-Output-Plugin “influxdb” werden die Daten dann in die InfluxDB geschrieben.
+* Traefik v2 runs as a Docker container on a Linux host.
+* Traefik outputs access logs in JSON format to STDOUT.
+* Telegraf fetched the Traefik container's JSON output using the docker_log input plugin.
+* To work with the JSON output in InfluxDB and Grafana, we need to convert them using Telegraf's parser preprocessor plugin into distinct fields. Otherwise, only numeric fields are kept as metric values. String values are discarded by default.
+* We're using Telegraf's output plugin "influxdb" to write them to InfluxDB.
 
-## Traefik konfigurieren
-Die traefik.yml beinhaltet dazu folgende Konfiguration:
+## Configure Traefik
+traefik.yml contains the following settings:
 
 ```yaml
 accessLog:
@@ -32,10 +32,10 @@ accessLog:
           Content-Type: keep
 ```
 
-Damit werden die Accesslogs im JSON-Format rausgeschrieben. JSON hat den Vorteil, dass es maschinell leichter weiterverarbeitet werden kann – wir müssen also nicht mit GROK-Patterns oder dergleichen hantieren. Außerdem werden die Request-Header zwar verworfen (“drop”), aber die Header “User-Agent” und “Content-Type” werden beibehalten.
+This makes Traefik output access logs in JSON format. JSON can easily be processed by machines – so we don't have to deal with GROK patterns or such workarounds. Furthermore, request headers get dropped, but the "User-Agent" und "Content-Type" are kept.
 
-## Telegraf konfigurieren
-Die telegraf.conf habe ich folgendermaßen eingerichtet:
+## Configure Telegraf
+My telegraf.conf looks like this:
 
 ```ini
 [[inputs.docker_log]]
@@ -74,12 +74,12 @@ Die telegraf.conf habe ich folgendermaßen eingerichtet:
     password = "..."
 ```
 
-Wichtige Einstellungen sind hier:
+Important settings are:
 
-* container_name_include gibt an, von welcher Container-Instanz die Logs eingesammelt werden sollen. In diesem Fall die Traefik-Instanz.
-* parse_fields gibt an, welches Intput-Feld verarbeitet werden soll – in diesem Fall das Feld “message”.
-* json_string_fields gibt an, welche Werte aus dem eingelesenen JSON-Objekt als String-Felder in die InfluxDB geschrieben werden sollen. Lässt man das weg, werden alle nicht-numerischen Felder verworfen.
-* json_time_key und die anderen json_time-Einstellungen geben an, aus welchem JSON-Key und mit welchem Format die Logs den Zeitstempel für die Logs-Einträge beinhalten.
-* Im Output-Plugin musst Du dann noch die Verbindung zur InfluxDB korrekt konfigurieren.
+* container_name_include specifies from which container instance the logs are collected. It's our Traefik instance.
+* parse_fields specifies which input field is to be processed. It's the field "message".
+* json_string_fields specifies which values from the read JSON object are to be written to InfluxDB as string fields. If not specified, all non-numeric fields are dropped.
+* json_time_key and the other json_time settings specify in which JSON keys and in which date-time format the timestamps for our log entries are contained.
+* The output plugin needs to be configured so that Telegraf can connect to the InfluxDB.
 
-Das ganze soll als Beispiel dienen. Beachte bei der Speicherung, Auswertung und Verwendung der Access Logs bitte die geltenden Gesetze – in der EU bspw. die DSGVO und ggfls. weitere.
+This is just meant to be an example. Please mind applicable law when storing, processing and using the access logs – such as GDPR in the European Union.
