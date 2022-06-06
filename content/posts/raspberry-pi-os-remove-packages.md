@@ -8,13 +8,13 @@ aliases:
     - /2020/06/raspberry-pi-os-64-bit-lite-desktop-pakete-entfernen/
 ---
 
-Kürzlich [schrieb ich darüber](/posts/usb-boot-raspberry-pi/), dass es eine erste 64 bit Beta-Version von Raspberry Pi OS (ehemals Raspbian) gibt. Diese gibt es bislang leider nur in der Desktop-Variante und noch nicht als Lite-Version. Mit zwei Befehlen kannst Du jedoch ganz leicht die – sofern Du sie nicht benötigst – überflüssigen Desktop-Pakete deinstallieren.
+Recently, [I wrote about](/posts/usb-boot-raspberry-pi/) the availability of the 64 bit beta version of Raspberry Pi OS (formerly known as Raspbian). Unfortunately, the new 64 bit beta is only available in the Desktop variant, containing lots of packages most lightweight server systems won't need. There's no lite variant of the 64 bit beta version available at the time of writing. However, you can easily remove the Desktop packages from a running installation with two easy commands.
 
-Die Beta von Raspberry Pi OS 64 bit kannst Du im [Download-Verzeichnis der Raspberry Pi Seite](https://downloads.raspberrypi.org/raspios_arm64/images/) herunterladen. Auf eine SD-Karte oder SSD bekommst Du das heruntergeladene Image am einfachsten mit dem [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/).
+You can download Raspberry Pi OS' 64 bit beta version [from the download directory on Raspberry Pi's website](https://downloads.raspberrypi.org/raspios_arm64/images/). The [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/) makes it easy to burn the image to an SD card or external USB drive.
 
 ![](/img/raspberry-usb.png)
 
-Nach dem Start habe ich mit folgenden beiden Befehlen die für mich überflüssigen Desktop-Pakete deinstalliert:
+Enter the following commands (at your own risk!) to remove the Desktop packages after your Pi has started from the newly written card:
 
 ```bash
 sudo apt-get remove --purge \
