@@ -24,8 +24,8 @@ Die Beta von Raspberry Pi OS 64 bit kannst Du im Download-Verzeichnis der Raspbe
       <pubDate>Thu, 28 May 2020 11:30:03 +0000</pubDate>
       
       <guid>https://virtualzone.de/posts/usb-boot-raspberry-pi/</guid>
-      <description>Darauf habe sicher nicht nur ich gewartet: Endlich kann der Raspberry Pi 4 von USB-Laufwerken starten! Und das ganz ohne die weit verbreiteten Workarounds, bei denen noch eine SD-Karte als primäres Boot-Medium benötigt wurde. Möglich macht es eine neuen Firmware, ein sogenanntes EEPROM. Und nebenbei gibt es auch eine 64 bit Beta-Version von Raspberry OS, ehemals Raspbian.
-Zunächst musst Du dazu Deinen Raspberry Pi mit einem Raspbian bzw. Raspberry OS booten.</description>
+      <description>Here&amp;rsquo;s something that&amp;rsquo;s probably been eagerly-awaited not only by me: Finally, Raspberry Pi 4 can boot directly from USB devices. Without any of the widespread workarounds which require an SD card a primrary boot medium. This is made possible by a new firmware, the so-called EEPROM. Furthermore, a new 64 bit beta version of Raspberry OS is available, too (formerly known as Raspbian).
+To get started, boot your Raspberry Pi with a Raspbian or Raspberry OS installation.</description>
     </item>
     
   </channel>
