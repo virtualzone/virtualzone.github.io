@@ -2,19 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://virtualzone.de/tags/docker/</loc>
+    <lastmod>2022-06-19T15:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://virtualzone.de/tags/linux/</loc>
+    <lastmod>2022-06-19T15:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://virtualzone.de/posts/</loc>
+    <lastmod>2022-06-19T15:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://virtualzone.de/posts/alpine-docker-rootless/</loc>
+    <lastmod>2022-06-19T15:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://virtualzone.de/tags/</loc>
+    <lastmod>2022-06-19T15:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://virtualzone.de/</loc>
+    <lastmod>2022-06-19T15:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://virtualzone.de/tags/kubernetes/</loc>
     <lastmod>2021-09-03T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://virtualzone.de/posts/</loc>
-    <lastmod>2021-09-03T11:30:03+00:00</lastmod>
-  </url><url>
     <loc>https://virtualzone.de/posts/k3s-glusterfs/</loc>
-    <lastmod>2021-09-03T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://virtualzone.de/tags/</loc>
-    <lastmod>2021-09-03T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://virtualzone.de/</loc>
     <lastmod>2021-09-03T11:30:03+00:00</lastmod>
   </url><url>
     <loc>https://virtualzone.de/posts/onedrive-upload-backup/</loc>
@@ -39,9 +48,6 @@
     <lastmod>2020-06-07T11:30:03+00:00</lastmod>
   </url><url>
     <loc>https://virtualzone.de/posts/traefik-access-log-influxdb-grafana-telegraf/</loc>
-    <lastmod>2020-06-03T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://virtualzone.de/tags/docker/</loc>
     <lastmod>2020-06-03T11:30:03+00:00</lastmod>
   </url><url>
     <loc>https://virtualzone.de/tags/api/</loc>
@@ -108,9 +114,6 @@
     <lastmod>2016-08-27T11:30:03+00:00</lastmod>
   </url><url>
     <loc>https://virtualzone.de/posts/reduce-pdf-file-size-2/</loc>
-    <lastmod>2015-08-15T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://virtualzone.de/tags/linux/</loc>
     <lastmod>2015-08-15T11:30:03+00:00</lastmod>
   </url><url>
     <loc>https://virtualzone.de/tags/firewall/</loc>

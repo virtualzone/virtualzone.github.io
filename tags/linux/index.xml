@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2022 Heiner Beck.</copyright>
-    <lastBuildDate>Sat, 15 Aug 2015 11:30:03 +0000</lastBuildDate><atom:link href="https://virtualzone.de/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Jun 2022 15:00:00 +0000</lastBuildDate><atom:link href="https://virtualzone.de/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up Alpine Linux with Rootless Docker</title>
+      <link>https://virtualzone.de/posts/alpine-docker-rootless/</link>
+      <pubDate>Sun, 19 Jun 2022 15:00:00 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/alpine-docker-rootless/</guid>
+      <description>As of Docker Engine v20.10, it&amp;rsquo;s possible to run the Docker daemon as a non-root user (Rooless mode). This is especially valuable in view of security aspects. Rootless mode mitigates potential vulnerabilities in the Docker daemon.
+However, at the time of writing, setting up Docker in rootless mode is not straightforward if you&amp;rsquo;re using Alpine Linux as your host system. This is why I summarized the steps to get Docket Rootless up and running on Alpine Linux.</description>
+    </item>
+    
     <item>
       <title>How to reduce PDF file size in Linux - Part 2</title>
       <link>https://virtualzone.de/posts/reduce-pdf-file-size-2/</link>
