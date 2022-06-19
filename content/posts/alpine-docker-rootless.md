@@ -120,3 +120,9 @@ If you did not create a regular user account during the installation, it's time 
     $ docker ps
     $ docker run --rm hello-world
     ```
+
+## Allow ports < 1024 (optional)
+By default, only ports >= 1024 can be exposed by non-root users. To change this, change the minimum unprivileged port in `/etc/sysctl.conf`:
+```
+# echo "net.ipv4.ip_unprivileged_port_start=80" >> /etc/sysctl.conf
+```
