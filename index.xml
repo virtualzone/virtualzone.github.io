@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2022 Heiner Beck.</copyright>
-    <lastBuildDate>Sun, 19 Jun 2022 15:00:00 +0000</lastBuildDate><atom:link href="https://virtualzone.de/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Jun 2022 18:00:00 +0000</lastBuildDate><atom:link href="https://virtualzone.de/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up Alpine Linux with Podman</title>
+      <link>https://virtualzone.de/posts/alpine-podman/</link>
+      <pubDate>Sat, 25 Jun 2022 18:00:00 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/alpine-podman/</guid>
+      <description>Recently, I&amp;rsquo;ve written a blog post on how to set up Rootless Docker on Alpine Linux. Today I&amp;rsquo;m showing you how to set up Podman. Podman has a rootless architecture built in. It&amp;rsquo;s an alternative to Docker, providing an almost identical command line interface. Thus, if you&amp;rsquo;re used to Docker CLI, you won&amp;rsquo;t have any issues working with Podman.
+Podman was initially developed by RedHat and is available as an open source project.</description>
+    </item>
+    
     <item>
       <title>Setting up Alpine Linux with Rootless Docker</title>
       <link>https://virtualzone.de/posts/alpine-docker-rootless/</link>
