@@ -89,24 +89,27 @@ $ sudo echo "net.ipv4.ip_unprivileged_port_start=80" >> /etc/sysctl.conf
 ## Using Podman and Pods
 If you are used to Docker, you can use Podman just the way to used to control Docker. One difference is that Podman can group multiple containers into Pods (that's where the name comes from: Pod Manager). You may know Pods from Kubernetes. Containers in a Pod share a namespace, a network and a security context.
 
-* List running containers:
-    ```
-    podman ps
-    ```
-* List existing pods:
-    ```
-    podman pod ps
-    ```
-* Create a new pod:
-    ```
-    podman pod create pod-web
-    ```
-* Create a container inside the previously created Pod:
-    ```
-    podman run --rm -d \
-        --pod pod-web \
-        docker.io/library/nginx:alpine
-    ```
+List running containers:
+```
+podman ps
+```
+
+List existing pods:
+```
+podman pod ps
+```
+
+Create a new pod:
+```
+podman pod create pod-web
+```
+
+Create a container inside the previously created Pod:
+```
+podman run --rm -d \
+    --pod pod-web \
+    docker.io/library/nginx:alpine
+```
 
 ## Starting containers on system start
 Because Podman follows a daemonless concept, containers are not started along with the non-existing Daemon on system boot. Instead, Podman recommends using systemd to start, stop and restart containers when the system starts.
