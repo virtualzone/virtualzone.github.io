@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2022 Heiner Beck.</copyright>
-    <lastBuildDate>Sat, 25 Jun 2022 18:00:00 +0000</lastBuildDate><atom:link href="https://virtualzone.de/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Oct 2022 17:00:00 +0000</lastBuildDate><atom:link href="https://virtualzone.de/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Connecting multiple networks to a Podman container</title>
+      <link>https://virtualzone.de/posts/podman-multiple-networks/</link>
+      <pubDate>Sun, 16 Oct 2022 17:00:00 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/podman-multiple-networks/</guid>
+      <description>I&amp;rsquo;m running my containers with Podman in Rootless Mode on Alpine for about four months now. However, an annoying problem has haunted me ever since:
+When a container was connected to more than one network, outgoing connections were not working correctly.
+Consider a container connected to two bridge networks:
+$ podman run --rm -it \ --network net1 \ --network net2 \ alpine /bin/ash Inside the container, the two networks are connected correctly:</description>
+    </item>
+    
     <item>
       <title>Setting up Alpine Linux with Podman</title>
       <link>https://virtualzone.de/posts/alpine-podman/</link>
