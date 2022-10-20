@@ -51,7 +51,7 @@ PING 8.8.8.8 (8.8.8.8): 56 data bytes
 ## The solution
 The solution is quite simple: You will need to set ```net.ipv4.conf.all.rp_filter``` to 2.
 
-On my Alpine system, rp_filter was set to 1 by default. The settings controls the source path validation within the kernel's IPv4 network stack. 1 means "strict", whereas 2 means "loose".
+On my Alpine system, rp_filter was set to 1 by default. The setting controls the source path validation within the kernel's IPv4 network stack. 1 means "strict", whereas 2 means "loose".
 
 You can try the solution temporarily by running:
 
