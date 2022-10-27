@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2022 Heiner Beck.</copyright>
-    <lastBuildDate>Sun, 16 Oct 2022 17:00:00 +0000</lastBuildDate><atom:link href="https://virtualzone.de/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Oct 2022 15:00:00 +0000</lastBuildDate><atom:link href="https://virtualzone.de/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenRC Script for &#39;podman kube play&#39;</title>
+      <link>https://virtualzone.de/posts/openrc-podman-kube-play/</link>
+      <pubDate>Wed, 26 Oct 2022 15:00:00 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/openrc-podman-kube-play/</guid>
+      <description>In June, I&amp;rsquo;ve written about my approach to starting and stopping Podman Pods using OpenRC scripts on Alpine Linux. However, that approach had two major drawbacks: First, the pods were started in the foreground, causing OpenRC to wait for all pod initialization tasks to complete. If an image needed to be pulled first, this could lead to longer delays, significantly increasing system startup times. Secondly, requesting the status of a previously started pod always stated &amp;ldquo;crashed&amp;rdquo;.</description>
+    </item>
+    
     <item>
       <title>Connecting multiple networks to a Podman container</title>
       <link>https://virtualzone.de/posts/podman-multiple-networks/</link>

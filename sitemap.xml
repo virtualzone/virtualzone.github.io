@@ -2,22 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://virtualzone.de/posts/podman-multiple-networks/</loc>
-    <lastmod>2022-10-16T17:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://virtualzone.de/tags/docker/</loc>
-    <lastmod>2022-10-16T17:00:00+00:00</lastmod>
+    <lastmod>2022-10-26T15:00:00+00:00</lastmod>
   </url><url>
     <loc>https://virtualzone.de/tags/linux/</loc>
-    <lastmod>2022-10-16T17:00:00+00:00</lastmod>
+    <lastmod>2022-10-26T15:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://virtualzone.de/posts/openrc-podman-kube-play/</loc>
+    <lastmod>2022-10-26T15:00:00+00:00</lastmod>
   </url><url>
     <loc>https://virtualzone.de/posts/</loc>
-    <lastmod>2022-10-16T17:00:00+00:00</lastmod>
+    <lastmod>2022-10-26T15:00:00+00:00</lastmod>
   </url><url>
     <loc>https://virtualzone.de/tags/</loc>
-    <lastmod>2022-10-16T17:00:00+00:00</lastmod>
+    <lastmod>2022-10-26T15:00:00+00:00</lastmod>
   </url><url>
     <loc>https://virtualzone.de/</loc>
+    <lastmod>2022-10-26T15:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://virtualzone.de/posts/podman-multiple-networks/</loc>
     <lastmod>2022-10-16T17:00:00+00:00</lastmod>
   </url><url>
     <loc>https://virtualzone.de/posts/alpine-podman/</loc>
