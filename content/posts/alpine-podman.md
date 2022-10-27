@@ -174,3 +174,5 @@ On Alpine, we're using OpenRC instead of systemd by default. I'm using Podman's 
     ```
     # rc-update add pod-traefik
     ```
+
+**Update:** I've improved the OpenRC scripts. Please read the corresponding [blog post](/posts/openrc-podman-kube-play/).
