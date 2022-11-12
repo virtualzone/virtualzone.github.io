@@ -42,6 +42,8 @@ params:
   socialIcons:
     - name: twitter
       url: "https://twitter.com/heinerbeck/"
+    - name: mastodon
+      url: "https://hessen.social/@heinerbeck"
     - name: github
       url: "https://github.com/virtualzone/"
     - name: linkedin
