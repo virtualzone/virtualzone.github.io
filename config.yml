@@ -40,8 +40,6 @@ params:
     Title: "Hi there \U0001F44B"
     Content: Welcome to my blog
   socialIcons:
-    - name: twitter
-      url: "https://twitter.com/heinerbeck/"
     - name: mastodon
       url: "https://hessen.social/@heinerbeck"
     - name: github
