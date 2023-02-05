@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2022 Heiner Beck.</copyright>
-    <lastBuildDate>Wed, 26 Oct 2022 15:00:00 +0000</lastBuildDate><atom:link href="https://virtualzone.de/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Feb 2023 06:00:00 +0000</lastBuildDate><atom:link href="https://virtualzone.de/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go-hole: A minimalistic DNS proxy and and blocker</title>
+      <link>https://virtualzone.de/posts/dns-proxy-forwarder-blackhole/</link>
+      <pubDate>Sun, 05 Feb 2023 06:00:00 +0000</pubDate>
+      
+      <guid>https://virtualzone.de/posts/dns-proxy-forwarder-blackhole/</guid>
+      <description>You&amp;rsquo;ll probaby know Pi-hole. It&amp;rsquo;s a popular &amp;ldquo;DNS sinkhole&amp;rdquo; – a DNS proxy server which blocks certain requests, such a as those for well-known ad serving domains. The effect is a much less ad-cluttered web experience in your home network.
+I&amp;rsquo;ve been using Pi-hole for several years as a Docker container on a Raspberry Pi. The Raspi is serving as a small home server on my home network.
+However, as much as I like Pi-hole, I felt it got loaded with new features over the years and performed slower over the time.</description>
+    </item>
+    
     <item>
       <title>OpenRC Script for &#39;podman kube play&#39;</title>
       <link>https://virtualzone.de/posts/openrc-podman-kube-play/</link>
