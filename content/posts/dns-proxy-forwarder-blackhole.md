@@ -7,7 +7,7 @@ tags:
 author: "Heiner"
 ---
 
-You'll probaby know Pi-hole. It's a popular "DNS sinkhole" – a DNS proxy server which blocks certain requests, such a as those for well-known ad serving domains. The effect is a much less ad-cluttered web experience in your home network.
+You'll probably know Pi-hole. It's a popular "DNS sinkhole" – a DNS proxy server which blocks certain requests, such a as those for well-known ad serving domains. The effect is a much less ad-cluttered web experience in your home network.
 
 I've been using Pi-hole for several years as a Docker container on a Raspberry Pi. The Raspi is serving as a small home server on my home network.
 
@@ -29,7 +29,7 @@ Go-hole serves as DNS server on your (home) network. Instead of having your clie
 
 Incoming queries from your clients are checked against a list of unwanted domain names ("blacklist"), such as well-known ad serving domains and trackers. If a requested name matches a name on the blacklist, Go-hole responds with error code NXDOMAIN (non-existing domain). This leads to clients not being able to load ads and tracker codes. In case you want to access a blacklisted domain, you can easily add it to a whitelist.
 
-As an additional feature, you can set a list of custom hostnames/domain names to be resolved to specific IP addresses. This is useful for accessing services on your local network by name instead of their IP addresses.
+As an additional feature, you can set a list of custom host names/domain names to be resolved to specific IP addresses. This is useful for accessing services on your local network by name instead of their IP addresses.
 
 ## How to use Go-hole?
 The simplest way of getting Go-hole up and running is by using the [pre-built Docker images](https://github.com/virtualzone/go-hole/pkgs/container/go-hole).
@@ -63,7 +63,7 @@ This config sets the following:
 * ```blacklist``` sets the black list source URL.
 * ```blacklistRenewal``` sets the automatic blacklist updating to a 1 day interval (1440 minutes).
 * ```whitelist``` whitelists two domains which would be blacklisted otherwise.
-* ```local``` sets a IPv4 (A record) and IPv6 (AAAA record) for the local name "ha".
+* ```local``` sets an IPv4 (A record) and IPv6 (AAAA record) for the local name "ha".
 
 After you've prepared your configuration file, you can start the Docker container like this:
 
