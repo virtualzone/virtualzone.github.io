@@ -6,7 +6,7 @@
     <description>Recent content in letsencrypt on Virtualzone Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2022 Heiner Beck.</copyright>
+    <copyright>&amp;copy; 2023 Heiner Beck.</copyright>
     <lastBuildDate>Sat, 11 Feb 2017 11:30:03 +0000</lastBuildDate><atom:link href="https://virtualzone.de/tags/letsencrypt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Let’s Encrypt / EFF’s CertBot with NGINX in Docker</title>
