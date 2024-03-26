@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>firewall on Virtualzone Blog</title>
+    <title>Firewall on Virtualzone Blog</title>
     <link>https://virtualzone.de/tags/firewall/</link>
-    <description>Recent content in firewall on Virtualzone Blog</description>
+    <description>Recent content in Firewall on Virtualzone Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2023 Heiner Beck.</copyright>
-    <lastBuildDate>Thu, 20 Nov 2014 11:30:03 +0000</lastBuildDate><atom:link href="https://virtualzone.de/tags/firewall/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; 2024 Heiner Beck.</copyright>
+    <lastBuildDate>Thu, 20 Nov 2014 11:30:03 +0000</lastBuildDate>
+    <atom:link href="https://virtualzone.de/tags/firewall/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to enable IPv6 on a SonicWall (SonicOS 5.9) using NAT</title>
       <link>https://virtualzone.de/posts/ipv6-on-a-sonicwall/</link>
       <pubDate>Thu, 20 Nov 2014 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/posts/ipv6-on-a-sonicwall/</guid>
       <description>IPv6 aimed to make Network Address Translation (NAT) obselete as there are so many addresses available that every single device can have its own worldwide unique IPv6 address. However, even with IPv6, using NAT is a very simple way to get your devices behind a Dell SonicWall connected to IPv6 services on the internet. In contrast to going without NAT, all the devices behind your SonicWall will emerge under the SonicWall’s IPv6 address.</description>
     </item>
-    
   </channel>
 </rss>

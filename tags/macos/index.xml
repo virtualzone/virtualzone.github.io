@@ -1,53 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>macos on Virtualzone Blog</title>
+    <title>Macos on Virtualzone Blog</title>
     <link>https://virtualzone.de/tags/macos/</link>
-    <description>Recent content in macos on Virtualzone Blog</description>
+    <description>Recent content in Macos on Virtualzone Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2023 Heiner Beck.</copyright>
-    <lastBuildDate>Tue, 06 Dec 2016 11:30:03 +0000</lastBuildDate><atom:link href="https://virtualzone.de/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; 2024 Heiner Beck.</copyright>
+    <lastBuildDate>Tue, 06 Dec 2016 11:30:03 +0000</lastBuildDate>
+    <atom:link href="https://virtualzone.de/tags/macos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating an encrypted file container on macOS</title>
       <link>https://virtualzone.de/posts/encrypted-file-container-macos/</link>
       <pubDate>Tue, 06 Dec 2016 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/posts/encrypted-file-container-macos/</guid>
       <description>Some years ago, I’ve used TrueCrypt to create encrypted containers for storing sensitive files. However, TrueCrypt is nowadays considered insecure and I’m on macOS Sierra 10.12 now – time for another solution. Luckily, macOS has integrated means for creating encrypted containers and saving sensitive information in it. You don’t need any additional software for this. As far as I know, this solution also works for previous versions of Mac OS X, like Mac OS X 10.</description>
     </item>
-    
     <item>
       <title>Fix Docker not using /etc/hosts on MacOS</title>
       <link>https://virtualzone.de/posts/fix-docker-not-using-etc-hosts-on-macos/</link>
       <pubDate>Sun, 28 Aug 2016 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/posts/fix-docker-not-using-etc-hosts-on-macos/</guid>
       <description>On my MacBook with Mac OS X 10.11 (El Capitan) and Docker 1.12.0, Docker did not read manually set DNS entries from the /etc/hosts file.
 When I executed “docker push” for example, this resulted in “no such hosts” errors:
 Put http://shuttle:5000/v1/repositories/webfrontend/: dial tcp: lookup shuttle on 192.168.65.1:53: no such host On Mac OS, Docker is running in a host container itself. Thus, you’ll have to add DNS entries to the container’s /etc/hosts file.</description>
     </item>
-    
     <item>
       <title>How to reduce PDF file size in Linux - Part 2</title>
       <link>https://virtualzone.de/posts/reduce-pdf-file-size-2/</link>
       <pubDate>Sat, 15 Aug 2015 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/posts/reduce-pdf-file-size-2/</guid>
       <description>Several months ago, I wrote a blog post about reducing a PDF file’s size. Since then, I’ve used that technique many times. However, you may want to control the DPI (dots per inch) even more specific. Here’s how to do it:
 gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.7 \ -dDownsampleColorImages=true \ -dDownsampleGrayImages=true \ -dDownsampleMonoImages=true \ -dColorImageResolution=120 \ -dGrayImageResolution=120 \ -dMonoImageResolution=120 \ -sOutputFile=output.pdf input.pdf Hint: This also works on MacOS. Just install GhostScript using Homebrew:</description>
     </item>
-    
     <item>
       <title>How to reduce PDF file size in Linux</title>
       <link>https://virtualzone.de/posts/reduce-pdf-file-size/</link>
       <pubDate>Wed, 21 Nov 2012 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/posts/reduce-pdf-file-size/</guid>
       <description>Using a single line of GhostScript command on my Ubuntu’s terminal, I was able to reduce the size of a PDF file from 6 MB to approximately 1 MB:
 gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -sOutputFile=output.pdf input.pdf You can also use the following parameters for -dPDFSETTINGS instead of /screen:
 /screen – Lowest quality, lowest size /ebook – Moderate quality /printer – Good quality /prepress – Best quality, highest size Update: Read Part 2 of this blog post for more detailled file size reduction settings.</description>
     </item>
-    
   </channel>
 </rss>

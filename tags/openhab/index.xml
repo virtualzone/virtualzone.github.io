@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>openhab on Virtualzone Blog</title>
+    <title>Openhab on Virtualzone Blog</title>
     <link>https://virtualzone.de/tags/openhab/</link>
-    <description>Recent content in openhab on Virtualzone Blog</description>
+    <description>Recent content in Openhab on Virtualzone Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2023 Heiner Beck.</copyright>
-    <lastBuildDate>Sun, 28 Aug 2016 11:30:03 +0000</lastBuildDate><atom:link href="https://virtualzone.de/tags/openhab/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; 2024 Heiner Beck.</copyright>
+    <lastBuildDate>Sun, 28 Aug 2016 11:30:03 +0000</lastBuildDate>
+    <atom:link href="https://virtualzone.de/tags/openhab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>From FHEM to OpenHAB with Homegear: Installation/Docker container</title>
       <link>https://virtualzone.de/posts/from-fhem-to-openhab-with-homegear-installation-docker-container/</link>
       <pubDate>Sun, 28 Aug 2016 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/posts/from-fhem-to-openhab-with-homegear-installation-docker-container/</guid>
       <description>For more than 2.5 years, I’ve now been running FHEM with several HomeMatic sensors and actors. Using the HM-CFG-LAN Configuration Tool as an I/O interface between FHEM and the HomeMatic devices, this setup has been running smoothly most of the time. The configuration was a bit tricky now and then, but it worked. However, OpenHAB seems to become a really good choice. Version 2 is currently available as Beta 3. It features a modern web interface and an easy-to-use extension manager.</description>
     </item>
-    
   </channel>
 </rss>

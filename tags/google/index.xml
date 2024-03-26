@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>google on Virtualzone Blog</title>
+    <title>Google on Virtualzone Blog</title>
     <link>https://virtualzone.de/tags/google/</link>
-    <description>Recent content in google on Virtualzone Blog</description>
+    <description>Recent content in Google on Virtualzone Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2023 Heiner Beck.</copyright>
-    <lastBuildDate>Fri, 10 Aug 2012 11:30:03 +0000</lastBuildDate><atom:link href="https://virtualzone.de/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; 2024 Heiner Beck.</copyright>
+    <lastBuildDate>Fri, 10 Aug 2012 11:30:03 +0000</lastBuildDate>
+    <atom:link href="https://virtualzone.de/tags/google/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Determining a location’s federal state using Google Maps API</title>
       <link>https://virtualzone.de/posts/determining-a-locations-federal-state-using-google-maps-api/</link>
       <pubDate>Fri, 10 Aug 2012 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/posts/determining-a-locations-federal-state-using-google-maps-api/</guid>
       <description>If you have to find out which federal state a city belongs to, you can use the Google Maps API v3. Here is a straightforward JavaScript code snippet:
 function log(s) { $(&amp;#39;#sysout&amp;#39;).append(document.createTextNode(s + &amp;#39;n&amp;#39;)); } function getResult(results) { for (var i=0; i -1) { return result[&amp;#39;address_components&amp;#39;][j][&amp;#39;short_name&amp;#39;]; } } return &amp;#39;&amp;#39;; } function getCountry(result) { return extractFirst(result, &amp;#39;country&amp;#39;); } function getFederalState(result) { return extractFirst(result, &amp;#39;administrative_area_level_1&amp;#39;); } function searchLocation() { $(&amp;#39;#sysout&amp;#39;).empty(); var location = $(&amp;#39;#location&amp;#39;).</description>
     </item>
-    
   </channel>
 </rss>

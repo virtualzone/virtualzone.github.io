@@ -6,196 +6,155 @@
     <description>Recent content in Tags on Virtualzone Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2023 Heiner Beck.</copyright>
-    <lastBuildDate>Sun, 05 Feb 2023 06:00:00 +0000</lastBuildDate><atom:link href="https://virtualzone.de/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; 2024 Heiner Beck.</copyright>
+    <lastBuildDate>Sun, 05 Feb 2023 06:00:00 +0000</lastBuildDate>
+    <atom:link href="https://virtualzone.de/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>docker</title>
+      <title>Docker</title>
       <link>https://virtualzone.de/tags/docker/</link>
       <pubDate>Sun, 05 Feb 2023 06:00:00 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/docker/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>linux</title>
+      <title>Linux</title>
       <link>https://virtualzone.de/tags/linux/</link>
       <pubDate>Sun, 05 Feb 2023 06:00:00 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/linux/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>kubernetes</title>
+      <title>Kubernetes</title>
       <link>https://virtualzone.de/tags/kubernetes/</link>
       <pubDate>Fri, 03 Sep 2021 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/kubernetes/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>github</title>
+      <title>Github</title>
       <link>https://virtualzone.de/tags/github/</link>
       <pubDate>Thu, 02 Sep 2021 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/github/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>onedrive</title>
+      <title>Onedrive</title>
       <link>https://virtualzone.de/tags/onedrive/</link>
       <pubDate>Thu, 02 Sep 2021 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/onedrive/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>tool</title>
+      <title>Tool</title>
       <link>https://virtualzone.de/tags/tool/</link>
       <pubDate>Thu, 02 Sep 2021 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/tool/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>raspberrypi</title>
+      <title>Raspberrypi</title>
       <link>https://virtualzone.de/tags/raspberrypi/</link>
       <pubDate>Sun, 07 Jun 2020 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/raspberrypi/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>api</title>
+      <title>Api</title>
       <link>https://virtualzone.de/tags/api/</link>
       <pubDate>Mon, 01 Jun 2020 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/api/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>endonomdo</title>
+      <title>Endonomdo</title>
       <link>https://virtualzone.de/tags/endonomdo/</link>
       <pubDate>Mon, 01 Jun 2020 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/endonomdo/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>letsencrypt</title>
+      <title>Letsencrypt</title>
       <link>https://virtualzone.de/tags/letsencrypt/</link>
       <pubDate>Sat, 11 Feb 2017 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/letsencrypt/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>nginx</title>
+      <title>Nginx</title>
       <link>https://virtualzone.de/tags/nginx/</link>
       <pubDate>Sat, 11 Feb 2017 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/nginx/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>macos</title>
+      <title>Macos</title>
       <link>https://virtualzone.de/tags/macos/</link>
       <pubDate>Tue, 06 Dec 2016 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/macos/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>fhem</title>
+      <title>Fhem</title>
       <link>https://virtualzone.de/tags/fhem/</link>
       <pubDate>Sun, 28 Aug 2016 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/fhem/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>homeautomation</title>
+      <title>Homeautomation</title>
       <link>https://virtualzone.de/tags/homeautomation/</link>
       <pubDate>Sun, 28 Aug 2016 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/homeautomation/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>openhab</title>
+      <title>Openhab</title>
       <link>https://virtualzone.de/tags/openhab/</link>
       <pubDate>Sun, 28 Aug 2016 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/openhab/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>proxy</title>
+      <title>Proxy</title>
       <link>https://virtualzone.de/tags/proxy/</link>
       <pubDate>Sat, 27 Aug 2016 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/proxy/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>wordpress</title>
+      <title>Wordpress</title>
       <link>https://virtualzone.de/tags/wordpress/</link>
       <pubDate>Sat, 27 Aug 2016 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/wordpress/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>firewall</title>
+      <title>Firewall</title>
       <link>https://virtualzone.de/tags/firewall/</link>
       <pubDate>Thu, 20 Nov 2014 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/firewall/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>ipv6</title>
+      <title>Ipv6</title>
       <link>https://virtualzone.de/tags/ipv6/</link>
       <pubDate>Thu, 20 Nov 2014 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/ipv6/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>sonicwall</title>
+      <title>Sonicwall</title>
       <link>https://virtualzone.de/tags/sonicwall/</link>
       <pubDate>Thu, 20 Nov 2014 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/sonicwall/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>google</title>
+      <title>Google</title>
       <link>https://virtualzone.de/tags/google/</link>
       <pubDate>Fri, 10 Aug 2012 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/tags/google/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

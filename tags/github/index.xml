@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>github on Virtualzone Blog</title>
+    <title>Github on Virtualzone Blog</title>
     <link>https://virtualzone.de/tags/github/</link>
-    <description>Recent content in github on Virtualzone Blog</description>
+    <description>Recent content in Github on Virtualzone Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2023 Heiner Beck.</copyright>
-    <lastBuildDate>Thu, 02 Sep 2021 11:30:03 +0000</lastBuildDate><atom:link href="https://virtualzone.de/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; 2024 Heiner Beck.</copyright>
+    <lastBuildDate>Thu, 02 Sep 2021 11:30:03 +0000</lastBuildDate>
+    <atom:link href="https://virtualzone.de/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Back up server to OneDrive’s special App Folder</title>
       <link>https://virtualzone.de/posts/onedrive-upload-backup/</link>
       <pubDate>Thu, 02 Sep 2021 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/posts/onedrive-upload-backup/</guid>
       <description>I’m a convinced user of OneDrive Personal. Bundled with M365, it’s a cheap option to get 1 TB of cloud storage. Having plenty of cloud storage at hand, I’m also using my OneDrive to run automated backups of my servers. There are various solutions capable of uploading files to OneDrive, including rclone. However, I was looking for a solution which enables me to grant my backup script only access to one specific folder instead of my entire cloud drive – better safe than sorry.</description>
     </item>
-    
     <item>
       <title>Unifi USG: Multiple IP addresses on PPPoE</title>
       <link>https://virtualzone.de/posts/unifi-usg-multiple-ip-addresses-on-pppoe/</link>
       <pubDate>Mon, 16 Aug 2021 11:30:03 +0000</pubDate>
-      
       <guid>https://virtualzone.de/posts/unifi-usg-multiple-ip-addresses-on-pppoe/</guid>
       <description>My DSL provider TAL.de offers to assign a static and a dynamic IP address on PPPoE dial in. The dynamic IP address is the primary one, used for accessing the internet. Packets to the static IP address are routed to the router as well. Here’s how to set up things up on a Unifi Security Gateway (USG).
 By default, USG only allows for one IP address when dialing in via PPPoE.</description>
     </item>
-    
   </channel>
 </rss>
