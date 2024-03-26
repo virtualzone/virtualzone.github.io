@@ -2,7 +2,7 @@ baseURL: "https://virtualzone.de/"
 languageCode: "en-us"
 title: "Virtualzone Blog"
 theme: "PaperMod"
-Copyright: "&copy; 2023 Heiner Beck."
+Copyright: "&copy; 2024 Heiner Beck."
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -40,8 +40,6 @@ params:
     Title: "Hi there \U0001F44B"
     Content: Welcome to my blog
   socialIcons:
-    - name: mastodon
-      url: "https://hessen.social/@heinerbeck"
     - name: github
       url: "https://github.com/virtualzone/"
     - name: linkedin

@@ -7,7 +7,7 @@ ShowPostNavLinks: false
 ShowWordCount: false
 ---
 
-We created this privacy policy in order to inform you about the information we collect, how we use your data and which choices you as a visitor of the Seatsurfing website and the Seatsurfing app have.
+We created this privacy policy in order to inform you about the information we collect, how we use your data and which choices you as a visitor of this website have.
 
 Unfortunately, it’s in the nature of things that this policy sounds quite technically. We tried to keep things as simple and clear as possible.
 

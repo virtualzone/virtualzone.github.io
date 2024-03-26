@@ -8,8 +8,8 @@ ShowWordCount: false
 ---
 
 Heiner Beck  
-Wilhelm-Busch-Str. 59  
-60431 Frankfurt am Main  
+Karl-Herbert-Scheer-Str. 6   
+61381 Friedrichsdorf    
 Germany
 
 Email: mail@virtualzone.de

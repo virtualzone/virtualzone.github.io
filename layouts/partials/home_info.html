@@ -41,20 +41,20 @@
             </article>
             <article class="post-entry">
                 <header class="entry-header">
-                    <h2>Go-hole</h2>
+                    <h2>chargebot.io</h2>
                 </header>
                 <div class="entry-content">
-                    <p>Minimalistic DNS server which serves as an upstream proxy and ad blocker, optimized for high performance.</p>
+                    <p>Charge your Tesla from solar power or when dynamic grid prices are low. It works with any wallbox and with any solar power inverter.</p>
                 </div>
                 <footer class="entry-footer">
-                    {{ partial "svg.html" (dict "context" . "name" "github") }} GitHub Project
+                    {{ partial "svg.html" (dict "context" . "name" "link") }} Visit chargebot.io
                     <a class="entry-link"
-                    href="https://github.com/virtualzone/go-hole"></a>
+                    href="https://chargebot.io"></a>
             </article>
         </div>
     </div>
     <footer class="entry-footer">
-        {{ partial "social_icons.html" site.Params.socialIcons }}
+        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
     </footer>
 </article>
 {{- end -}}
